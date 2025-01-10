@@ -3,13 +3,12 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Como uma desenvolvedora front-end júnior, estou completamente apaixonada pelo mundo do design e do desenvolvimento front-end. A cada dia, descubro novas maneiras de transformar ideias em experiências visuais. Minha jornada no universo do design me inspirou a explorar profundamente os aspectos estéticos e técnicos da criação de interfaces, e estou animada com a constante evolução desse campo.
-
-Meu compromisso com a aprendizagem contínua é uma parte fundamental da minha carreira. Estou sempre em busca de novas tecnologias, tendências e melhores práticas para garantir que minhas habilidades estejam sempre atualizadas e alinhadas com as demandas do mercado de trabalho. Cada desafio é uma oportunidade de crescimento, e estou empolgada para enfrentar o que vem pela frente enquanto continuo a me aprimorar e contribuir para projetos impactantes e inovadores.
-
+export const anaKaroline = `Oie, sou a Ana , uma desenvolvedora front-end júnior apaixonada por transformar ideias em interfaces funcionais e atraentes. Aos 21 anos e formada em Análise e Desenvolvimento de Sistemas pelo ENIAC, tenho dedicado meu tempo ao aperfeiçoamento de habilidades em tecnologias modernas e design digital.
 `;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const QuemSouEu = `Sou uma jovem dedicada, constantemente em busca de aprimorar minhas habilidades na área que amo. Inspirada pelo meu pai a entrar no mundo da tecnologia, encontrei minha paixão e me empenho em me especializar a cada dia.
+
+Meu objetivo é dominar o universo da tecnologia, não apenas para construir uma carreira sólida, mas também para, no futuro, inspirar e orientar outros jovens a perseguirem seus sonhos. Quero ajudar a formar novos talentos e liderar projetos tecnológicos com impacto e propósito.`;
 
 export const EXPERIENCES = [
   {
