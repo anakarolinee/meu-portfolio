@@ -7,14 +7,14 @@ const Footer = () => {
         <div className="mt-4">
           
           {/* Botão para WhatsApp */}
-          <a
+          {/* <a
             href="https://wa.me/5511992065803" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-4 py-2 text-white bg-purple-400 hover:bg-purple-500 hover:scale-105 shadow-lg rounded-full shadow "
           >
             Entre em contato comigo
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/ana-karoline-araujo/"
             target="_blank"
