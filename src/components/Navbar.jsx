@@ -49,14 +49,14 @@ const Navbar = () => {
             <li>
               <Link
                 className="text-gray-600 transition hover:text-purple-600"
-                to="/esperiencias"
+                to="/experiencias"
               >
                 Experiências
               </Link>
             </li>
             <li>
               <li className="text-gray-600 transition hover:text-purple-600">
-                <a href="../../public/Currículo Ana Karoline.pdf" target="_blank">CV</a>
+                <a href="Currículo Ana Karoline.pdf" target="_blank">CV</a>
 
               </li>
             </li>
@@ -88,14 +88,14 @@ const Navbar = () => {
                 <li className="border-b">
                   <Link
                     className="block px-4 py-2 text-gray-600 transition hover:bg-gray-100 hover:text-purple-600"
-                    to="/esperiencias"
+                    to="/experiencias"
                   >
                     Experiências
                   </Link>
                 </li>
                 <li className="border-b">
                   <a
-                    href="../../public/Currículo Ana Karoline.pdf"
+                    href="Currículo Ana Karoline.pdf"
                     target="_blank"
                     className="block w-full px-4 py-2 text-gray-600 transition hover:bg-gray-100 hover:text-purple-600"
                   >
@@ -105,7 +105,7 @@ const Navbar = () => {
                 <li>
                   <a
                     className="flex items-center px-4 py-2 text-gray-600 transition hover:bg-gray-100 hover:text-purple-600"
-                    href="https://github.com/"
+                    href="https://github.com/anakarolinee"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -137,7 +137,7 @@ const Navbar = () => {
             <FaLinkedin className="hover:text-purple-600" />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/anakarolinee"
             target="_blank"
             rel="noopener noreferrer"
           >

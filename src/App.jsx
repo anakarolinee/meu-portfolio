@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Projetos from "./components/projetos";
-import Esperiencias from "./components/Esperiencias";
+import Experiencias from "./components/Experiencias";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
         <main className="flex-grow container mx-auto px-8">
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/esperiencias" element={<Esperiencias />} />
+            <Route path="/experiencias" element={<Experiencias />} />
             <Route path="/projetos" element={<Projetos />} />
           </Routes>
         </main>

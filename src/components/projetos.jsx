@@ -33,7 +33,7 @@ const Projetos = () => {
         </div>
 
         <iframe
-          src="../../public/conversor/index.html" // Ajuste o caminho conforme necessário
+          src="conversor/index.html" // Ajuste o caminho conforme necessário
           className="w-full h-96 lg:h-[400px] border-none mb-6"
           title="Conversor"
         ></iframe>
