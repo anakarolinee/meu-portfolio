@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { PiHamburgerFill } from "react-icons/pi";
+import { CiMenuFries } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -66,9 +66,11 @@ const Navbar = () => {
           <div className="relative md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-purple-800 focus:outline-none"
+              className={`text-purple-800 focus:outline-none transition-transform ${
+                menuOpen ? "rotate-90" : "rotate-0"
+              }`}
             >
-              <PiHamburgerFill className="h-8 w-8 hover:text-purple-500" />
+              <CiMenuFries  className="h-8 w-8 hover:text-purple-500 transform duration-300" />
             </button>
 
             {/* Menu dropdown */}
