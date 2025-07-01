@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
 import DecorativeElements from "./DecorativeElements";
+import { TfiEmail } from "react-icons/tfi";
 
 const Contato = () => {
   const [formData, setFormData] = useState({
@@ -120,10 +121,14 @@ const Contato = () => {
       <div className="fixed top-0 -z-10  h-full w-full">
       </div>
       <div className="flex min-h-screen -mt-6 items-center justify-center relative z-10 px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl">
-          <h2 className="mb-6 sm:mb-8 lg:mb-12 text-center  text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-500 px-2">
-            Entre em contato comigo
-          </h2>
+        <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl">
+          <div className="flex flex-col items-center text-center justify-center">
+            <TfiEmail className="text-purple-500 text-4xl mb-2" />
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-500 px-2">
+              Entre em contato comigo
+            </h2>
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 lg:space-y-8">
             <div className="relative">
               <input
