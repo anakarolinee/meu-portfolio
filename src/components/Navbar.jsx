@@ -58,7 +58,9 @@ const Navbar = () => {
           <div className="relative md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-purple-800 focus:outline-none"
+              className={`text-purple-800 focus:outline-none transition-transform ${
+                menuOpen ? "rotate-90" : "rotate-0"
+              }`}
             >
               <RxHamburgerMenu className="h-8 w-8 hover:text-purple-500" />
             </button>
