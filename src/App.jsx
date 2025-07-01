@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Projetos from "./components/projetos";
-import Experiencias from "./components/Experiencias";
-
+import Contato from "./components/Contato";
+import DecorativeCircles from "./components/DecorativeCircles";
 const App = () => {
   return (
     <Router>
@@ -21,12 +21,11 @@ const App = () => {
         <main className="flex-grow container mx-auto px-8">
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/experiencias" element={<Experiencias />} />
             <Route path="/projetos" element={<Projetos />} />
+            <Route path="/contato" element={<Contato />} />
           </Routes>
         </main>
-
-        {/* Footer */}
+        <DecorativeCircles />
         <Footer />
       </div>
     </Router>

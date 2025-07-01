@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
-import profilePic from "../assets/Anak.png";
 import { QuemSouEu } from "../constants";
+import { oi } from "../constants";
+import { bemVindo } from "../constants";
+import profilePic from "../assets/Anak.png";
+import DecorativeElements from "./DecorativeElements";
 
 const SobreMim = () => {
   const textRef = useRef(null);
@@ -40,20 +43,23 @@ const SobreMim = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="pb-32">
-      <h2 className="my-20  text-center text-gray-400 text-4xl">
-        Quem sou <span className="text-purple-600">eu?</span>
+    <div ref={sectionRef} className="pb-32 relative">
+
+      <DecorativeElements variant="circles" intensity="light" />
+
+      <h2 className="my-20 text-center text-gray-400 text-4xl relative z-10">
+
       </h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap relative z-10">
         <div
           ref={imgRef}
           className="w-full lg:w-1/2 lg:p-6 opacity-0 scale-90 translate-y-8 transition-all duration-1000"
         >
-          <div className="flex items-center justify-center">
+          <div className="flex justify-center mt-16 -mb-14 ">
             <img
               src={profilePic}
               alt="Ana Karoline"
-              className="rounded-full object-cover w-48 h-48 sm:w-28 sm:h-28 md:w-72 md:h-72"
+              className="rounded-full  object-cover w-48 h-48 sm:w-28 sm:h-28 md:w-72 md:h-72"
             />
           </div>
         </div>
@@ -61,9 +67,15 @@ const SobreMim = () => {
           ref={textRef}
           className="w-full lg:w-1/2 opacity-0 scale-90 translate-y-8 transition-all duration-1000"
         >
-          <div className="flex justify-center lg:justify-start">
-            <p className="my- max-w-xl py-16 text-gray-400">{QuemSouEu}</p>
-          </div>
+          <p className="text-2xl mt-10 sm:text-xl md:text-2xl font-light text-gray-500 leading-relaxed max-w-xl py-16 px-4 sm:px-0">
+            {oi}
+          </p>
+          <p className="text-lg sm:text-xl font-light text-gray-500 leading-relaxed max-w-xl -mt-8 px-4 sm:px-0">
+            {QuemSouEu}
+          </p>
+          <p className="text-lg sm:text-xl font-light text-gray-500 leading-relaxed max-w-xl mt-12  px-4 sm:px-0">
+            {bemVindo}
+          </p>
         </div>
       </div>
     </div>
