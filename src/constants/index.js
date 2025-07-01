@@ -4,7 +4,7 @@ export const anaKaroline = `Oie, sou a Ana! Tenho 21 anos, sou desenvolvedora fr
 export const oi = `Oie, sou a Ana! 👋🏻`;
 
 export const QuemSouEu = `
-sou uma Web Design e front end jr, apaixonada por transformar ideias em interfaces bonitas e funcionais. 
+sou uma Web Designer e front end jr, apaixonada por transformar ideias em interfaces bonitas e funcionais. 
 Adoro aprender novas tecnologias e sempre busco aprimorar minhas habilidades para entregar o melhor resultado possível.
 `;
 
