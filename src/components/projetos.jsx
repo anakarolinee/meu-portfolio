@@ -29,6 +29,7 @@ const Projetos = () => {
       titulo: " Este Portfólio Pessoal",
       descricao: "Site responsivo desenvolvido com React, Vite, Tailwind CSS e JavaScript. Form feito com EmailJS.",
       tecnologias: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+      github: "https://github.com/anakarolinee/meu-portfolio",
       destaque: true
     },
   ];
