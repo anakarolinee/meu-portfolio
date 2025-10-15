@@ -116,16 +116,18 @@ const Contato = () => {
   };
 
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900 relative">
+    <div id="contato" className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900 relative">
       <DecorativeElements variant="floating" intensity="strong" />
       <div className="fixed top-0 -z-10  h-full w-full">
       </div>
       <div className="flex min-h-screen -mt-6 items-center justify-center relative z-10 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl">
           <div className="flex flex-col items-center text-center justify-center">
-            <TfiEmail className="text-purple-500 text-4xl mb-2" />
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-500 px-2">
-              Entre em contato comigo
+            <div className="flex items-center bg-gray-200 p-2 mb-2 rounded-full justify-center">
+            <TfiEmail className="text-purple-600 text-2xl" />
+            </div>
+            <h2 className="text-xl sm:text-2xl md:text-2xl lg:text-2xl text-gray-500 px-2">
+              Entre em contato comigo, vamos conversar!
             </h2>
           </div>
 
@@ -187,7 +189,7 @@ const Contato = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="rounded-full p-3 sm:p-4 w-full sm:w-auto sm:min-w-56 text-center justify-center bg-gradient-to-r from-pink-300 via-slate-400 to-purple-500 hover:from-pink-400 hover:via-slate-500 hover:to-purple-500 text-white text-base sm:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none mx-auto block sm:mx-0"
+              className="rounded-full p-3 sm:p-3 w-full sm:w-auto sm:min-w-56 text-center justify-center bg-purple-500 hover:bg-purple-600 text-white  sm:text-lg font-semibold "
             >
               {isLoading ? "Enviando..." : "Enviar Mensagem"}
             </button>

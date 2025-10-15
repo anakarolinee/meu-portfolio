@@ -1,8 +1,10 @@
 import DecorativeElements from "./DecorativeElements";
 import { TbWorld, TbBrandGithub } from "react-icons/tb";
-import projetoFigmaImg from "../assets/projeto-figma.png";
+// import projetoFigmaImg from "../assets/projeto-figma.png";
 import projetoConversorImg from "../assets/projeto-conversor.png";
 import meuPortifolioImg from "../assets/meu-portfolio.png";
+import Dogs from "../assets/Dogs.png";
+
 const Projetos = () => {
   const abrirDemo = (iframe) => {
     window.open(iframe, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes');
@@ -10,35 +12,39 @@ const Projetos = () => {
 
   const projetos = [
     {
+      id: 1,
+      titulo: "Dogs – Rede social para cachorros",
+      descricao: "Projeto desenvolvido durante o curso de React da Origamid. A aplicação simula uma rede social para cães, com autenticação, upload de fotos,  comentários e interações entre usuários.",
+      tecnologias: ["React", "JavaScript"],
+      github: "https://github.com/anakarolinee/Dogs",
+      imagem: Dogs,
+    },
+    {
       id: 2,
-      titulo: "Conversor de Moedas",
+      titulo: "Conversor de dolar para real",
       descricao: "Aplicação para conversão de dólar para real usando tecnologias web puras. Valor do dolar baseado na época criada.",
       tecnologias: ["HTML", "CSS", "JavaScript"],
-      iframe: "conversor/index.html",
-      github: "https://github.com/anakarolinee/conversor"
+      // iframe: "conversor/index.html",
+      github: "https://github.com/anakarolinee/conversor",
+      imagem: projetoConversorImg,
     },
     {
       id: 3,
-      titulo: "Protótipo de site de vendas Restaurante",
-      descricao: "Protótipo de site para vendas de comida vegana, desenvolvido no Figma com foco em UX/UI design.",
-      tecnologias: ["Figma", "UI/UX Design", "Prototipagem"],
-      iframe: "https://www.figma.com/design/RMtuiqwtWXFIhkDlZCQOGk/Mistura-Vegana?node-id=0-1&t=DnkqPwddX1D8mBFz-1"
-    },
-    {
-      id: 1,
-      titulo: " Este Portfólio Pessoal",
+      titulo: "Portfólio Pessoal",
       descricao: "Site responsivo desenvolvido com React, Vite, Tailwind CSS e JavaScript. Form feito com EmailJS.",
       tecnologias: ["React", "Vite", "Tailwind CSS", "JavaScript"],
       github: "https://github.com/anakarolinee/meu-portfolio",
-      destaque: true
+      destaque: true,
+      imagem: meuPortifolioImg,
     },
+
   ];
 
   return (
-    <div className="pb-24 relative">
+    <div id="projetos" className="mt-10 relative scroll-mt-32">
       <DecorativeElements variant="geometric" intensity="medium" />
-      <div className="relative my-20 z-10">
-        <h2 className=" mt-32 text-center text-gray-500 text-4xl ">Meus Projetos</h2>
+      <div className="relative z-10">
+        <h2 className="text-center mt-32 text-gray-500 text-4xl">Meus Projetos</h2>
         <div className="max-w-6xl mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-4">
           {projetos.map((projeto) => (
             <div
@@ -47,33 +53,13 @@ const Projetos = () => {
                 }`}
             >
               <div className="mb-4">
-                {projeto.iframe ? (
-                  <div
-                    className="bg-gray-50 rounded-lg p-2 h-48 hover:bg-gray-100 transition-colors relative group"
-                  >
-                    {projeto.id === 3 ? (
-                      <img
-                        src={projetoFigmaImg}
-                        alt="Protótipo Figma - Restaurante Vegano"
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg">
-                        <img
-                          src={projetoConversorImg}
-                          alt="Site de conversão de moedas"
-                          className="w-full h-full object-cover rounded-lg"
-                        />
-                      </div>
-                    )}
-                  </div>
-                ) : (
+                <div className="bg-gray-50 rounded-lg p-2 h-48 hover:bg-gray-100 transition-colors relative group">
                   <img
-                    src={meuPortifolioImg}
-                    alt="Este Portfólio Pessoal"
+                    src={projeto.imagem || meuPortifolioImg}
+                    alt={projeto.titulo}
                     className="w-full h-full object-cover rounded-lg"
                   />
-                )}
+                </div>
               </div>
               <div className="space-y-3">
                 <div>

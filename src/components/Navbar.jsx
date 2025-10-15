@@ -1,11 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);  // Ref para o menu dropdown
+  const menuRef = useRef(null);  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -33,20 +32,20 @@ const Navbar = () => {
           {/* Menu principal */}
           <ul className="hidden md:flex space-x-6">
             <li>
-              <Link
+              <a
                 className="text-gray-600 transition hover:text-purple-600"
-                to="/projetos"
+                href="#projetos"
               >
                 Projetos
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="text-gray-600 transition hover:text-purple-600"
-                to="/contato"
+                href="#contato"
               >
                 Contato
-              </Link>
+              </a>
             </li>
             <li>
               <li className="text-gray-600 transition hover:text-purple-600">
@@ -70,20 +69,22 @@ const Navbar = () => {
                 className="absolute right-0 mt-4 w-48 rounded-lg bg-white shadow-lg"
               >
                 <li className="border-b">
-                  <Link
+                  <a
+                    onClick={() => setMenuOpen(false)}
                     className="block px-4 py-2 text-gray-600 transition hover:bg-gray-100 hover:text-purple-600"
-                    to="/projetos"
+                    href="#projetos"
                   >
                     Projetos
-                  </Link>
+                  </a>
                 </li>
                 <li className="border-b">
-                  <Link
+                  <a
+                    onClick={() => setMenuOpen(false)}
                     className="block px-4 py-2 text-gray-600 transition hover:bg-gray-100 hover:text-purple-600"
-                    to="/contato"
+                    href="#contato"
                   >
                     Contato
-                  </Link>
+                  </a>
                 </li>
                 <li className="border-b">
                   <a

@@ -8,7 +8,6 @@ const CursorTrail = () => {
         const handleMouseMove = (e) => {
             setMousePosition({ x: e.clientX, y: e.clientY });
 
-            // Criar nova partícula
             const newParticle = {
                 id: Date.now() + Math.random(),
                 x: e.clientX,
