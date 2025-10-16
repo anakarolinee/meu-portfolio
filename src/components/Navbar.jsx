@@ -54,7 +54,7 @@ const Navbar = () => {
               </li>
             </li>
           </ul>
-          <div className="relative md:hidden">
+          <div className="relative md:hidden" ref={menuRef}>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className={`text-purple-800 focus:outline-none transition-transform ${
@@ -65,7 +65,6 @@ const Navbar = () => {
             </button>
             {menuOpen && (
               <ul
-                ref={menuRef} 
                 className="absolute right-0 mt-4 w-48 rounded-lg bg-white shadow-lg"
               >
                 <li className="border-b">
