@@ -11,7 +11,7 @@ const Hero = () => {
   const dynamicTexts = [
     "Desenvolvedora Front-end Jr",
     "Apaixonada por Tecnologia e Design",
-    "Web Designer e Desenvolvedora",
+    "Web Designer e Desenvolvedora Front-End",
     "Transformando Ideias em Código"
   ];
 
@@ -32,7 +32,11 @@ const Hero = () => {
             Ana Karoline da Silva
           </h1>
 
-          <span className="bg-gradient-to-r p-2 from-gray-400 via-purple-500 to-purple-800 bg-clip-text text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight text-transparent font-semibold transition-all duration-500 transform text-center lg:text-left ">
+          <span className="block md:hidden bg-gradient-to-r p-2 from-gray-400 via-purple-500 to-purple-800 bg-clip-text text-xl xs:text-2xl sm:text-3xl tracking-tight text-transparent font-semibold text-center">
+           Desenvolvedora Front-End
+          </span>
+
+          <span className="hidden md:block bg-gradient-to-r p-2 from-gray-400 via-purple-500 to-purple-800 bg-clip-text md:text-4xl lg:text-5xl xl:text-6xl tracking-tight text-transparent font-semibold transition-all duration-500 transform text-center lg:text-left ">
             {dynamicTexts[textIndex]}
           </span>
 
