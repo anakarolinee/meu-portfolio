@@ -1,50 +1,24 @@
-Meu Portfólio Front-end
 
-🎨 Um espaço onde código encontra criatividade.
-Este projeto foi desenvolvido com foco em aprendizado contínuo, experimentação e liberdade criativa — sem medo de testar, errar e evoluir.
+# 🎨 My Creative Lab & Portfolio
 
-🚀 Sobre o projeto
+🌐 **Confira o projeto ao vivo:** [https://akaroline.dev/](https://akaroline.dev/)
 
-Este portfólio foi criado para apresentar meus projetos, habilidades e evolução como desenvolvedora front-end.
+Bem-vindo ao meu espaço de experimentação! Este portfólio não é apenas uma montra de projetos, mas um diário vivo onde estudo e aplico novas tecnologias enquanto exploro o limite da minha criatividade.
 
-Mais do que um “cartão de visitas”, ele é um laboratório pessoal onde aplico conceitos modernos de desenvolvimento web, explorando novas ideias e criando interfaces com identidade própria.
+## 🚀 O Projeto
 
-💡 Aqui, cada detalhe reflete meu processo de aprendizado e minha vontade de ir além do básico.
+Construído para ser fluido, moderno e funcional. O foco aqui foi unir a robustez do **React** com a liberdade estética do **Tailwind CSS**, garantindo que cada pixel reflita a minha jornada de aprendizagem.
 
-🛠️ Tecnologias utilizadas
-⚛️ React
-💛 JavaScript
-🎨 Tailwind CSS
-📩 EmailJS (@emailjs/browser)
-💡 Funcionalidades
-🌐 Apresentação de projetos
-🎨 Interface moderna e responsiva
-📬 Formulário de contato integrado com EmailJS
-✨ Design focado em criatividade e experiência do usuário
-📷 Preview
+### 🛠️ Tecnologias Utilizadas
 
-Em breve 🚧
-(adicione aqui prints ou GIFs do seu portfólio)
+- **React.js**: Base da aplicação para uma interface reativa.
+- **Tailwind CSS**: Utilizado para estilização customizada e layouts responsivos de forma rápida.
+- **JavaScript (ES6+)**: Lógica e manipulação de estados.
+- **@emailjs/browser**: Integração direta de formulário de contacto sem necessidade de um backend dedicado.
 
-📬 Contato
+## 📧 Contacto
 
-O projeto conta com um formulário funcional que permite o envio de mensagens diretamente para meu e-mail utilizando o EmailJS.
+O formulário de contacto na página utiliza o **EmailJS**. Sinta-se à vontade para me enviar uma mensagem diretamente pelo site! Se preferires o método tradicional:
 
-🧠 Aprendizados
-
-Durante o desenvolvimento deste projeto, explorei:
-
-Estruturação de aplicações com React
-Estilização com Tailwind CSS
-Integração com serviços externos (EmailJS)
-Criação de layouts responsivos
-Liberdade criativa no desenvolvimento de interfaces
-🌱 Em constante evolução
-
-Este projeto está em desenvolvimento contínuo.
-Sempre buscando melhorias, novas ideias e refinamento da experiência.
-
-💭 Sobre mim
-
-Sou uma desenvolvedora front-end apaixonada por tecnologia, design e experiências digitais.
-Gosto de transformar ideias em interfaces e estou sempre explorando novas formas de criar.
+- **LinkedIn**: [Ana Karoline](https://www.linkedin.com/in/ana-karoline-araujo/)
+- **Email**: <anakarolie230711@gmail.com>
