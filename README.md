@@ -18,7 +18,7 @@ Construído para ser fluido, moderno e funcional. O foco aqui foi unir a robuste
 
 ## 📧 Contacto
 
-O formulário de contacto na página utiliza o **EmailJS**. Sinta-se à vontade para me enviar uma mensagem diretamente pelo site! Se preferires o método tradicional:
+O formulário de contacto na página utiliza o **EmailJS**. Sinta-se à vontade para me enviar uma mensagem diretamente pelo site! Se preferir o método tradicional:
 
 - **LinkedIn**: [Ana Karoline](https://www.linkedin.com/in/ana-karoline-araujo/)
 - **Email**: <anakarolie230711@gmail.com>
